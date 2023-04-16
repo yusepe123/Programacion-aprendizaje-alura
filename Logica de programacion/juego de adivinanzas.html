@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+<h1> juego de adivinanzas</h1>
+<script>
+function saltarlinea() {
+document.write("<br><br><br>");
+}
+document.write("<br>");
+
+function imprimir(frase) {
+
+document.write(frase)
+
+}
+
+var numeroPensado= Math.round(Math.random()*10);
+var intentos = 3;
+var contador = 1;
+
+while(contador <= intentos){
+var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"));
+
+if (numeroPensado == numeroLanzado){
+
+alert("usted acerto, en el intento " + contador + " el numero Pensado era " + numeroPensado);
+break;
+
+}
+
+else{
+
+ alert("usted erro, intento " + contador);
+}
+
+contador++;
+
+}
+
+imprimir("fin");
+
+if (contador > intentos){
+
+imprimir("usted ha superado el limite de intentos, el numero pensado era " + numeroPensado);
+
+}
+
+else if (numeroPensado == numeroLanzado){
+
+imprimir("usted acerto, en el intento " + contador + " el numero Pensado era " + numeroPensado);
+
+}
+
+else{
+
+ imprimir("usted ha perdido, el numero pensado era " + numeroPensado);
+}
+
+</script>

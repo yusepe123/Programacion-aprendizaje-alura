@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1> Programa IMC</h1>
+
+<script>
+function saltarlinea() {
+document.write("<br><br><br>");
+}
+
+document.write("<br>");
+
+  function imprimir(frase) {
+   
+   document.write(frase)
+
+   }
+
+
+   function calcularImc(peso,altura) {
+
+    return (peso/(altura+altura))
+    
+   }
+
+document.write("<br>");
+
+imprimir("El promedio del imc calculado de juan y antonio es:"+ (calcularImc)(52,1.72)+calcularImc(71,1.80)/2);
+
+document.write("<br>");
+
+imprimir("El promedio del imc calculado de maria y teresa es:"+ (calcularImc)(52,1.60)+calcularImc(71,1.65)/2);
+</script>
